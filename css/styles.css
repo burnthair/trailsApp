@@ -1,0 +1,88 @@
+/*
+Grab the user input and display it on the output screen
+Convert &amp; to &
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  padding: 20px 0 6px 20px;
+  background: #a1e26f; /* Old browsers */
+  background: -moz-linear-gradient(left, #a1e26f 0%, #61c419 50%, #b0e894 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a1e26f 0%,#61c419 50%,#b0e894 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a1e26f 0%,#61c419 50%,#b0e894 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1e26f', endColorstr='#b0e894',GradientType=1 ); /* IE6-9 */
+}
+
+a {
+  display: inline-block;
+  padding: 0.4em;
+  margin: 6px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+a:link, a:active, a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #999;
+  background-color: #deb;
+}
+
+h2 {
+  padding: 20px;
+}
+
+h2, h3 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+h3 {
+  display: inline-block;
+  background-color: #556;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+form {
+  margin: 10px auto;
+  padding: 20px;
+  width: 32%;
+  background-color: #ddd;
+}
+
+input {
+  width: 98%;
+  margin: 8px 0;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 8px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #78CF38;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 90%;
+}
+
+ng-view {
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.trail-container {
+  width: 40%;
+}

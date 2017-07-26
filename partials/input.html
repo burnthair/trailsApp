@@ -1,3 +1,7 @@
-<form ng-submit='searchTrails()'>
+<form ng-submit='searchTrails(userCity, userState, userRadius)'>
+  <input type="text" placeholder="city" ng-model="userCity">
+  <input type="text" placeholder="state" ng-model="userState">
+  <input type="text" placeholder="mile radius" ng-model="userRadius">
+  <p ng-hide="">Please fill in all three boxes with valid information.</p>
   <button>submit</button>
 </form>

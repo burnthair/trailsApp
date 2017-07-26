@@ -1,1 +1,7 @@
-<p>output view</p>
+<!-- <h2>Within {{ userObject.city }}</h2> -->
+
+<div class="trail-container" ng-repeat='trail in trails track by $index'>
+  <h3>{{ trail.name }}</h3>
+  <h6>{{ trail.description }}</h6>
+  <p>{{ trail.directions }}</p>
+</div>

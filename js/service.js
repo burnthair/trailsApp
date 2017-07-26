@@ -7,18 +7,26 @@ app.factory('trailFactory', function($http) {
     getTrails: getTrails
   };
 
-  function setTrails(input) {
+  function setTrails(userInput) {
     var promise = $http({
       method: 'GET',
-      url: 'https://trailapi-trailapi.p.mashape.com/?limit=25&lon=-105.2&q[activities_activity_type_name_eq]=hiking&q[city_cont]=Detroit&q[state_cont]=Michigan&radius=25',
+      url: 'https://trailapi-trailapi.p.mashape.com/?limit=25&lon=-105.2&q[activities_activity_type_name_eq]=hiking&q[city_cont]=' + userInput.city + '&q[state_cont]=' + userInput.state + '&radius=' + userInput.radius,
       headers: {
         "X-Mashape-Key": "R1glfXkirXmshT0plpNskOg4o2Vkp1sEliJjsngVH16kpyh0YU",
         "Accept": "text/plain"
       }
     }).then(function(response) {
-      console.log(response.data.places);
+      trails = response.data.places;
+      console.log(trails);
+      console.log(trails[0].name);
     });
     return promise;
+
+    // function displayInput(userInput) {
+    //   var userObject = userInput;
+    //   return userObject;
+    // };
+    //
   };
 
   function getTrails() {
