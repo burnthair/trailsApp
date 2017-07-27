@@ -2,6 +2,6 @@
 
 <div class="trail-container" ng-repeat='trail in trails track by $index'>
   <h3>{{ trail.name }}</h3>
-  <h6>{{ trail.description }}</h6>
-  <p>{{ trail.directions }}</p>
+  <p class="description"><b>DESCRIPTION: </b> {{ trail.description }}</p>
+  <p class="directions"><b>DIRECTIONS: </b> {{ trail.directions }}</p>
 </div>

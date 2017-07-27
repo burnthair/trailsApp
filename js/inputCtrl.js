@@ -4,7 +4,7 @@ app.controller('inputCtrl', function($scope, trailFactory, $location) {
 
   $scope.searchTrails = function (userCity, userState, userRadius) {
     if (userCity == undefined || userState == undefined || userRadius == undefined) {
-      
+      console.log('boo');
     }
 
     var userInput = {
